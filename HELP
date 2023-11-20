@@ -1,0 +1,13 @@
+virtualenv venv
+venv\Scripts\activate
+pip install dvc
+
+We will track data.txt , so make data.txt and put a line in it
+
+dvc init - one new folder and one new file will be made - .dvc / .dvcignore 
+
+git status - only files - .dvcignore // in .dvc -> .gitignore // config will be tracked not others and we can also put data.txt in .gitignore so that it do not 
+             go to GITHUB
+
+
+
