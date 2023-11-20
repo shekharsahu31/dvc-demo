@@ -9,7 +9,11 @@ dvc init - one new folder and one new file will be made - .dvc / .dvcignore
 git status - only files - .dvcignore // in .dvc -> .gitignore // config will be tracked not others and we can also put data.txt in .gitignore so that it do not 
              go to GITHUB ,, IN .dvcignore - we add files which need to be ignored by DVC only **
 
+dvc add data.txt - to add file to DVC for tracking # data.txt should be untracked by GIT- to remove -  git rm -r --cached data.txt
+                                                                                                       git commit -m "stop tracking data.txt
 
+now you will see data.txt.dvc will be made + in gitignore /data.txt will be added automatically
+so now we will have to add git add .gitignore // data.txt.dvc - this file will have hashed codes for data - for tracking the data
 
 
 
